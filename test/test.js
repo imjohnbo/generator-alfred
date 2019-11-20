@@ -11,7 +11,9 @@ test.beforeEach(async t => {
 });
 
 test.serial('generates expected files', async t => {
-	const generator = t.context.generator;
+	const {context:
+		{generator}
+	} = t;
 
 	helpers.mockPrompt(generator, {
 		moduleName: 'test',

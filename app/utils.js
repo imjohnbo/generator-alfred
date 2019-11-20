@@ -1,5 +1,4 @@
 'use strict';
-const url = require('url');
 const uuid = require('uuid');
 const _s = require('underscore.string');
 const isScoped = require('is-scoped');
@@ -21,7 +20,7 @@ exports.generateUuid = key => {
 };
 
 exports.bundleId = props => {
-	const parsed = url.parse(props.website);
+	const parsed = new URL(props.website);
 
 	if (parsed.hostname === 'github.com') {
 		return `com.${props.githubUsername.toLowerCase()}.${props.alfredName}`;

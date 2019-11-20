@@ -63,7 +63,7 @@ module.exports = class extends Generator {
 				validate: x => x.length > 0 ? true : 'You have to provide a website URL',
 				filter: x => normalizeUrl(x)
 			}
-		]).then(props => {
+		]).then(props => { // eslint-disable-line promise/prefer-await-to-then
 			props.alfredName = props.moduleName.replace(/^alfred-/, '');
 
 			const tpl = {
