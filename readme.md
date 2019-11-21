@@ -6,7 +6,10 @@
 ## Install
 
 ```
-$ npm install --global generator-alfred
+git clone <this-repo>
+cd <this-repo>
+npm i
+npm link
 ```
 
 
@@ -21,4 +24,4 @@ $ yo alfred
 
 ## License
 
-MIT © [Sam Verschueren](https://github.com/SamVerschueren)
+MIT © [imjohnbo](https://github.com/imjohnbo)
